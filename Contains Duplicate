@@ -13,11 +13,11 @@ class Solution:
 Java Solution
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-        Set<Integer> intSet = new HashSet<>();
-        for(int num:nums){
-            if(intSet.contains(num))
+        Set<Integer> hashset = new HashSet<>();
+        for(int n:nums){
+            if(hashset.contains(n))
                 return true;
-            intSet.add(num);  
+            hashset.add(n);  
         }
         return false;
     }
