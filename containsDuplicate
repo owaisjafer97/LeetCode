@@ -22,3 +22,6 @@ class Solution {
         return false;
     }
 }
+
+Time Complexity : O(n) since we only traverse the array once
+Space Complexity : O(n) since we create a hashset which may take upto n integers (n : number of elements in array)
