@@ -1,3 +1,6 @@
+This is the Python3 and Java Solution for LeetCode #217 : Contains Duplicates
+
+Python 3 Solution
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         hashset = set()
@@ -6,3 +9,16 @@ class Solution:
                 return True
             hashset.add(n)
         return False
+
+Java Solution
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        Set<Integer> intSet = new HashSet<>();
+        for(int num:nums){
+            if(intSet.contains(num))
+                return true;
+            intSet.add(num);  
+        }
+        return false;
+    }
+}
